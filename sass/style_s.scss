@@ -1,0 +1,62 @@
+@import url("http://fonts.googleapis.com/css?family=Spirax");
+// @import url("http://fonts.googleapis.com/css?family=Roboto");
+@import url("http://fonts.googleapis.com/css?family=Macondo");
+
+$transition: all .5s ease-in-out;
+$color: white;
+
+@function setColor($color1,$color2,$n){
+    @return mix($color1,$color2,$n);
+}
+
+@function setWidth($width,$n){
+    @return $width*random($n)-$width;
+}
+
+$width: setWidth(100, 6)+10;
+
+@function setFont(){
+    @if($width>250px){
+        @return "Macondo";
+    }
+    @else{
+        @return "Spirax";
+    }
+}
+
+#main{
+    .mainDiv{
+        ul{
+            list-style: none;
+            margin-bottom: 20px;
+            padding: 0;
+            li{
+                padding: 15px;
+                width: 40px;
+                background:tomato ;
+                color: $color;
+                margin-bottom: 2px;
+                display: inline-block;
+                transition: $transition;
+
+                    &:hover{
+                        color: setColor(white,rebeccapurple,60%);
+                        width: setWidth(20px, 5)+10;
+                    }
+                }
+            }
+    }
+
+    .context{
+        width: 350px;
+        color: $color;
+        padding: 10px 12px;
+        // font-family: "Roboto";
+        background: setColor(lightslategray,brown,20%);
+
+        &:hover{
+            width: $width;
+            font-family: setFont();
+        }
+    }
+}

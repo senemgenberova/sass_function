@@ -1,0 +1,27 @@
+@import url("http://fonts.googleapis.com/css?family=Spirax");
+@import url("http://fonts.googleapis.com/css?family=Macondo");
+#main .mainDiv ul {
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0; }
+  #main .mainDiv ul li {
+    padding: 15px;
+    width: 40px;
+    background: tomato;
+    color: white;
+    margin-bottom: 2px;
+    display: inline-block;
+    transition: all 0.5s ease-in-out; }
+    #main .mainDiv ul li:hover {
+      color: #c1add6;
+      width: 50px; }
+#main .context {
+  width: 350px;
+  color: white;
+  padding: 10px 12px;
+  background: #9b3c40; }
+  #main .context:hover {
+    width: 510;
+    font-family: "Macondo"; }
+
+/*# sourceMappingURL=style_s.css.map */

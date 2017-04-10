@@ -1,0 +1,6 @@
+1. mix($color1, $color2, [$weight]) - bu funksiya vasitesile istenilen 2 rengi mix ve muxtelif tonlar elde etmek mumkundur.Buradaki $weight ise goturulmus color1 ve color2-nin miqdarini gosterir.Default valuesi 50%dir. Ex: mix(red,green, 15%)-Burada qirmizi rengden 15%, boz rengden ise 85% istifade olunur.
+2. darken($color,amount) - bu funksiya ile rengin tonu tundlese biler(hover movzusunda cox komeyi deyir).
+3. lighten($color,amount) - bu funksiya ile rengin tonu acla biler(hover movzusunda cox komeyi deyir).
+4. grayscale($color) - bu funksiya bize esasen sekillerde sekillerin rengini soldurmaq ucun istifade edilir(opacityden ferqli olaraq sekilin renglerini soldurmur, 100%de boz edir)
+5. List functionlardan demek olar ki ekseriyyeti istifadeye yararlidir. Buradaki functionlardan yaradacagim costum functionlarda istifade etmek olar(esas da index movzusunda).Meselen, bir cox rengleri defelerle yazmaqdansa simply bir listde saxlamaq ve onlarin indexlerini istenilen zaman, istediyimiz functionda istifade etmek daha rahatdir neinki her birini tekrar-tekrar yazmaq.
+6. Introspection functionlarin ise boyuk bir hissesi true or false return edir, bu ise functionlarda istifade oluna biler.
